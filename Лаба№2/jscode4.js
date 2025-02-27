@@ -1,7 +1,9 @@
-function zadanie() {
-    const a = prompt("Введите количество часов: ");
-    const b = prompt("Введите оплату за час: ");
-    var result = a * b;
-    alert(result)
+function da() {
+    const a = document.getElementById("Messagge")
+    if (confirm("Давай выбирай") == true){
+        a.textContent = ("Выбрали да")
+    } else {
+        a.textContent = ("Выбрали нет")
+    }
 }
-document.getElementById("zpButton").addEventListener("focus", zadanie);
+document.addEventListener("click", da)
