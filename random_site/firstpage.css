@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.headInf{
+    align-items: center;
+    display: flex;
+    margin: 30px;
+}
+
+.headLogo{
+    font-size: 30px;
+}
+
+
+.headBtn{
+    display: flex;
+    gap: 30px;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.headBtn a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.headImg{
+    position: absolute;
+    right: 7%;
+    top: 0;
+    z-index: -1;
+}
+
+.headImg img{
+    object-fit: cover;
+    object-position: center;
+    width: 0%;
+}
+
+.headTel{
+    background-color: #fff;
+}
+
+.headTel a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
