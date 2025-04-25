@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainWin">
+        <form class="formWin" action="registration.php" method="POST" >
+            <input type="text" name="LastName" placeholder="Фамилия" required>
+            <input type="text" name="Name" placeholder="Имя" required>
+            <input type="text" name="Otchestvo" placeholder="Отчество" required>
+            <div class="formWinBirthDate">
+                <input type="date" id="BirthDate" name="BirthDate" placeholder="Дата рождения" required>
+                <p>Полный возраст: <span id="age"></span> лет</p>
+            </div>
+            
+            <input type="text" name="PhoneNum" placeholder="Номер телефона" required>
+            <input type="text" name="Email" placeholder="Электронная почта" required>
+            <div class="formWinSexRadio">
+                <p>Пол:</p>
+                <div class="formWinSexRadio">
+                    <input type="radio" id="Sexradio1" name="Sradio" value="Мужской" required>
+                    <label for="Sexradio1">Мужской</label>
+                </div>
+                <div class="formWinSexRadio">
+                    <input type="radio" id="Sexradio2" name="Sradio" value="Женский" required>
+                    <label for="Sexradio2">Женский</label>
+                </div>
+                <div class="formWinSexRadio">
+                    <input type="radio" id="Sexradio3" name="Sradio" value="Не указывать" required>
+                    <label for="Sexradio3">Не указывать</label>
+                </div>
+                
+            </div>
+            <div class="formWinEdic">
+                <p>Образование:</p>
+                <div class="formWinEdicRadio">
+                    <input type="radio" id="Edicradio1" name="Eradio" value="Высшее" required>
+                    <label for="Edicradio1">Высшее</label>
+                </div>
+                <div class="formWinEdicRadio">
+                    <input type="radio" id="Edicradio2" name="Eradio" value="Высшее-неоконченное" required>
+                <label for="Edicradio2">Высшее-неоконченное</label>
+                </div>
+                <div class="formWinEdicRadio">
+                    <input type="radio" id="Edicradio3" name="Eradio" value="Среднее-специальное" required>
+                    <label for="Edicradio3">Среднее-специальное</label>
+                </div> 
+            </div>
+            <div class="formWinSelect">
+                <p>Страна:</p>
+                <select name="Country" required>
+                    <option value="1">США</option>
+                    <option value="2">Россия</option>
+                    <option value="3">Великобритания</option>
+                    <option value="4">Беларусь</option>
+                    <option value="5">Франция</option>
+                    <option value="6">Польша</option>
+                </select>
+            </div>
+            <div class="formWinAccept">
+                <input type="checkbox" name="AcceptGetInf" id="acceptgetinf" required>
+                <label for="acceptgetinf">Согласны ли вы на обработку персональных данных</label>
+            </div>
+            <div class="formWinBtn" >
+                <button type="submit" name="formSubmit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+    <script src="birthdate.js"></script>
+</body>
+</html>
